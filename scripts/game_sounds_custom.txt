@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------------------------ //
+// The Skynet Eliminator
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_M1887.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_shotgun.wav"
+}
+
+"Weapon_M1887.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_shotgun_crit.wav"
+}
+
+"Weapon_M1887.WorldReload"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_reload.wav"
+}
