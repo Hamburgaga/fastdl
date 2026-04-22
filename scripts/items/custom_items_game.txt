@@ -1,0 +1,75 @@
+#base "items_game.txt"
+
+"items_game"
+{
+	"items"
+	{		
+		"20001" // The Skynet Eliminator
+		{
+			"name"				"TF_WEAPON_M1887"
+			"item_name"			"Skynet Eliminator"
+			"item_type_name"	"Lever-Action Shotgun"
+			"item_description"	"Hasta la vista, chucklenuts."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_scattergun"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"scout"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_skynet_eliminator.mdl"
+			"model_player"		"models/weapons/v_models/v_skynet_eliminator.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"				
+				"uber on kill"				"1"
+				"headshot stat"				"1"
+				"clip size bonus"			"1.25"
+				"weapon spread bonus"		"0.7"
+				"fire rate penalty"			"1.4"
+				"damage penalty"			"0.7"
+			}
+			"attributes"
+			{
+				"add condition on kill"
+				{
+					"attribute_class"	"add_onkill_addcond_self"
+					"value"				"52 5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_M1887.Single"
+				"sound_burst"				"Weapon_M1887.SingleCrit"
+				"sound_reload"				"Weapon_M1887.WorldReload"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_skynet_eliminator"
+		}
+	}
+	"attributes"
+	{
+		"10000"
+		{
+			"name"					"headshot stat"
+			"attribute_class"		"can_headshot"
+			"description_string"	"Can headshot"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		
+		"10001"
+		{
+			"name"					"uber on kill"
+			"attribute_class"		"sniper_rage_display_only"
+			"description_string"	"On Kill: ÜberCharge for 5 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+	}
+}
